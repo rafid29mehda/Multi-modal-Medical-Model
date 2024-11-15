@@ -123,6 +123,6 @@ Time (s), ECG Amplitude (mV), PCG Amplitude (mV), Coupling Signal Amplitude
 
 ---
 
-### **Next Steps for You**:
+### **Dataset Sources**:
 - **Start by exploring open-source datasets** like **Physionet** (for ECG) or **The EchoNet-Dynamic** (for MRI data). 
 
