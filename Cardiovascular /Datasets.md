@@ -125,5 +125,4 @@ Time (s), ECG Amplitude (mV), PCG Amplitude (mV), Coupling Signal Amplitude
 
 ### **Next Steps for You**:
 - **Start by exploring open-source datasets** like **Physionet** (for ECG) or **The EchoNet-Dynamic** (for MRI data). 
-- Learn **signal processing techniques** (e.g., filtering, feature extraction) for working with ECG, PCG, and coupling signals.
-- Get familiar with software tools like **MATLAB**, **Python (SciPy, NumPy, Pandas)** for handling and analyzing biomedical data.
+
