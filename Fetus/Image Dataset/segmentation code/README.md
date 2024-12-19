@@ -1,4 +1,4 @@
-Here is a detailed explanation of the code for **fetal abdominal structures segmentation** using ultrasonic images:
+Detailed explanation of the code for **fetal abdominal structures segmentation** using ultrasonic images:
 
 ---
 
