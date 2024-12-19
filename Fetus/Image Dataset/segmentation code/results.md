@@ -76,4 +76,4 @@ Predicted Mask - max value: 0.0016506864
 3. **Refine Model**:
    - If results are suboptimal, consider training with additional data, adjusting the model architecture, or improving data augmentation techniques.
 
-Would you like to calculate metrics for this segmentation or analyze the results further? Let me know!
+
