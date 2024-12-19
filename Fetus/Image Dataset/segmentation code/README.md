@@ -219,4 +219,3 @@ plt.imshow(image_with_boxes, cmap='gray')
   - Evaluate segmentation performance using metrics like **IoU (Intersection over Union)**.
   - Expand training to include additional epochs or larger datasets for better accuracy.
 
-Let me know if you want to dive deeper into specific parts!
