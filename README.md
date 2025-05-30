@@ -3,7 +3,7 @@ Fine-tuning on medical images is critical for ensuring the model can identify ea
 ### 1. **Medical Image Fine-Tuning**: Detection vs. Explanation
 Fine-tuning on medical images is focused on enabling the model to recognize abnormalities like tumors, lesions, or other indicators of early cancer. Models like **ResNet**, **EfficientNet**, or **YOLO** excel at classification or object detection (i.e., detecting whether an image contains a tumor or pointing out its location).
 
-However, these models won't naturally generate **descriptive explanations** in the way a **language model** would. To provide **explanations** (e.g., describing where a lesion is located, its size, etc.), you'd need to either:
+However, these models won't naturally generate **descriptive explanations** in the way a **language model** would. To provide **explanations** (e.g., describing where a lesion is located, its size, etc.), we'd need to either:
 
 - **Combine the fine-tuned medical model** with a language model that can explain the output.
 - **Fine-tune a multimodal model** that can both analyze the image and generate text (similar to LLaVA's multimodal capabilities, but adapted for medical image analysis).
