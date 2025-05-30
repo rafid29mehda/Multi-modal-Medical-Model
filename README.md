@@ -37,7 +37,7 @@ In this example, the model detects the abnormality, and based on that, we constr
 Another option is to fine-tune or use a **multimodal model** that is capable of both **analyzing images** and **generating text-based descriptions**—similar to LLaVA, but for medical use cases.
 
 1. **Fine-tuning a Multimodal Model**: 
-   You can fine-tune a multimodal model on medical datasets that include **both images and textual descriptions** (e.g., labeled X-rays or MRIs with doctor-provided reports). This allows the model to learn not only to detect cancer but also to explain its findings in a detailed, medical way.
+   We can fine-tune a multimodal model on medical datasets that include **both images and textual descriptions** (e.g., labeled X-rays or MRIs with doctor-provided reports). This allows the model to learn not only to detect cancer but also to explain its findings in a detailed, medical way.
 
 2. **Publicly Available Models**:
    Some models already pre-trained or fine-tuned on medical data include:
