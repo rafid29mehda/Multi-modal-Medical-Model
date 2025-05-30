@@ -45,9 +45,9 @@ Another option is to fine-tune or use a **multimodal model** that is capable of 
    - **MedCLIP**: A medical version of the CLIP model, which links medical images with corresponding text descriptions.
 
 3. **Fine-tuning Example**:
-   You can train a multimodal model on a medical image dataset that includes both images and descriptive text (e.g., from radiology reports). For instance, a dataset might include:
+   we can train a multimodal model on a medical image dataset that includes both images and descriptive text (e.g., from radiology reports). For instance, a dataset might include:
    - **Chest X-rays** labeled as "normal" or "pneumonia" (or other conditions), along with text reports that describe abnormalities.
-   - You can fine-tune the multimodal model so it learns to generate similar reports when it analyzes new medical images.
+   - we can fine-tune the multimodal model so it learns to generate similar reports when it analyzes new medical images.
 
 ```python
 from transformers import VisionEncoderDecoderModel, AutoTokenizer, AutoFeatureExtractor
@@ -55,8 +55,8 @@ from transformers import VisionEncoderDecoderModel, AutoTokenizer, AutoFeatureEx
 # Load multimodal model for image + text tasks
 model = VisionEncoderDecoderModel.from_pretrained("biovil/biovil-vision-text")
 
-# Fine-tune on medical images and reports (you'll need your own dataset for this step)
-# Assuming you have a dataset of X-ray/MRI images and corresponding medical reports
+# Fine-tune on medical images and reports (we'll need wer own dataset for this step)
+# Assuming we have a dataset of X-ray/MRI images and corresponding medical reports
 
 # During fine-tuning, the model learns to generate text based on the image features
 ```
@@ -67,7 +67,7 @@ model = VisionEncoderDecoderModel.from_pretrained("biovil/biovil-vision-text")
 
 ### 3. **Gradio Interface for Explanations**
 
-If you want to provide **detailed explanations** along with detection results, you need to modify your Gradio interface to show both the **diagnostic result** and the **explanation**.
+If we want to provide **detailed explanations** along with detection results, we need to modify wer Gradio interface to show both the **diagnostic result** and the **explanation**.
 
 #### Example Gradio Function with Explanation:
 ```python
@@ -107,7 +107,7 @@ iface.launch()
 
 ### Final Thoughts
 
-- **If you are using a fine-tuned detection model** (e.g., ResNet, YOLO, etc.), you'll need to programmatically generate **textual explanations** based on the model's output.
-- **If you are using a multimodal model**, the model can be fine-tuned to provide both the detection and the descriptive explanation simultaneously. This is especially useful if you're working with datasets like **MIMIC-CXR** or **PadChest** that contain both images and radiology reports.
+- **If we are using a fine-tuned detection model** (e.g., ResNet, YOLO, etc.), we'll need to programmatically generate **textual explanations** based on the model's output.
+- **If we are using a multimodal model**, the model can be fine-tuned to provide both the detection and the descriptive explanation simultaneously. This is especially useful if we're working with datasets like **MIMIC-CXR** or **PadChest** that contain both images and radiology reports.
   
-Both options require domain knowledge in medical imaging to ensure that the generated explanations are accurate and clinically meaningful. Let me know if you want to explore a specific option further!
+Both options require domain knowledge in medical imaging to ensure that the generated explanations are accurate and clinically meaningful. Let me know if we want to explore a specific option further!
