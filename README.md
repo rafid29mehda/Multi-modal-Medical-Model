@@ -16,7 +16,7 @@ We can use a fine-tuned medical image model to **detect or classify** whether ca
   - **"A suspicious mass is detected in the upper left lung region. It appears to be 4cm in diameter. Further investigation is recommended."**
 
 This can be done by combining detection with a **rule-based system** for generating medical explanations, where:
-- If the model detects an abnormality in a specific region (e.g., bounding box for a lesion), you can generate a corresponding medical report.
+- If the model detects an abnormality in a specific region (e.g., bounding box for a lesion), we can generate a corresponding medical report.
 
 #### Example of Post-Processing for Explanation:
 ```python
