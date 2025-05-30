@@ -1,4 +1,4 @@
-Fine-tuning on medical images is critical for ensuring the model can identify early-stage cancer, but if you're also aiming to generate **detailed explanations** (e.g., "This X-ray shows a possible tumor in the lower right lung region"), you need to consider the following aspects:
+Fine-tuning on medical images is critical for ensuring the model can identify early-stage cancer, but to generate **detailed explanations** (e.g., "This X-ray shows a possible tumor in the lower right lung region"), you need to consider the following aspects:
 
 ### 1. **Medical Image Fine-Tuning**: Detection vs. Explanation
 Fine-tuning on medical images is focused on enabling the model to recognize abnormalities like tumors, lesions, or other indicators of early cancer. Models like **ResNet**, **EfficientNet**, or **YOLO** excel at classification or object detection (i.e., detecting whether an image contains a tumor or pointing out its location).
