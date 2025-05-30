@@ -12,7 +12,7 @@ However, these models won't naturally generate **descriptive explanations** in t
 #### **Option 1: Use a Pre-trained Medical Model + Text-Based Explanation**
 We can use a fine-tuned medical image model to **detect or classify** whether cancer is present, and then programmatically generate explanations based on the model's output. For example:
 
-- If the model detects a tumor in a certain region of an X-ray or MRI scan, you can generate a descriptive output like:
+- If the model detects a tumor in a certain region of an X-ray or MRI scan, we can generate a descriptive output like:
   - **"A suspicious mass is detected in the upper left lung region. It appears to be 4cm in diameter. Further investigation is recommended."**
 
 This can be done by combining detection with a **rule-based system** for generating medical explanations, where:
