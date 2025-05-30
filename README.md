@@ -31,7 +31,7 @@ def generate_medical_report(prediction, confidence, region=None):
     return report
 ```
 
-In this example, the model detects the abnormality, and based on that, we construct a medical explanation. You can improve the specificity of these explanations by adding **bounding box detection** to identify the region of the image where the model found abnormalities.
+In this example, the model detects the abnormality, and based on that, we construct a medical explanation. We can improve the specificity of these explanations by adding **bounding box detection** to identify the region of the image where the model found abnormalities.
 
 #### **Option 2: Fine-Tune a Multimodal Model for Both Detection and Explanation**
 Another option is to fine-tune or use a **multimodal model** that is capable of both **analyzing images** and **generating text-based descriptions**—similar to LLaVA, but for medical use cases.
