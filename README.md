@@ -110,4 +110,4 @@ iface.launch()
 - **If we are using a fine-tuned detection model** (e.g., ResNet, YOLO, etc.), we'll need to programmatically generate **textual explanations** based on the model's output.
 - **If we are using a multimodal model**, the model can be fine-tuned to provide both the detection and the descriptive explanation simultaneously. This is especially useful if we're working with datasets like **MIMIC-CXR** or **PadChest** that contain both images and radiology reports.
   
-Both options require domain knowledge in medical imaging to ensure that the
+Both options require domain knowledge in medical imaging to ensure that 
