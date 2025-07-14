@@ -1,6 +1,6 @@
 Detecting early-stage conditions such as autism, cancer, depression, or interpreting medical images like ultrasound reports requires highly specialized AI models trained specifically on medical data. Multi-modal models like CLIP, DALL·E, or LLaVA are powerful at general tasks of image and text understanding but are not specifically designed for medical diagnostics. For this kind of task, we'd want models that are trained on healthcare-specific datasets and can explain medical images in a clinically relevant way.
 
-Here are some model suggestions that align with the type of tasks you are describing:
+Here are some model suggestions:
 
 ### 1. **BioViL-T (Biomedical Vision-Language Model)**
    - **Type**: Image and Text (Healthcare)
