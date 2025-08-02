@@ -7,9 +7,9 @@
 !pip install -r requirements.txt
 ```
 
-### **Step 2: Organize Your Dataset**
+### **Step 2: Organize the Dataset**
 
-To use YOLO, your dataset must be structured in the following format:
+To use YOLO, the dataset must be structured in the following format:
 
 ```
 /content/INbreast+MIAS+DDSM Dataset/
@@ -31,7 +31,7 @@ Each `.txt` file must contain the bounding box coordinates and class labels in Y
 
 ### **Step 3: Label Images**
 
-Use a tool like **LabelImg** to annotate your images and generate bounding box coordinates for benign and malignant regions. The annotations should be saved in YOLO format.
+Use a tool like **LabelImg** to annotate the images and generate bounding box coordinates for benign and malignant regions. The annotations should be saved in YOLO format.
 
 - **Benign = 0**
 - **Malignant = 1**
@@ -43,7 +43,7 @@ For example, the content of `img1.txt` might look like this:
 
 ### **Step 4: Create a Custom Data Configuration File**
 
-Create a custom YAML file, `dataset.yaml`, to define your dataset paths and classes.
+Create a custom YAML file, `dataset.yaml`, to define the dataset paths and classes.
 
 ```yaml
 train: /content/INbreast+MIAS+DDSM Dataset/train/images  # path to training images
@@ -53,7 +53,7 @@ nc: 2  # number of classes (benign, malignant)
 names: ['Benign', 'Malignant']  # class names
 ```
 
-### **Step 5: Train YOLOv5 on Your Dataset**
+### **Step 5: Train YOLOv5 on the Dataset**
 
 ```python
 # Step 5: Train YOLOv5
@@ -109,16 +109,16 @@ You can save and load the trained YOLOv5 model for future use:
 
 ```python
 # Save the model
-!cp runs/train/exp/weights/best.pt /content/drive/MyDrive/your_model_name.pt
+!cp runs/train/exp/weights/best.pt /content/drive/MyDrive/the_model_name.pt
 
 # Load the model
-model = torch.hub.load('ultralytics/yolov5', 'custom', path='your_model_name.pt')
+model = torch.hub.load('ultralytics/yolov5', 'custom', path='the_model_name.pt')
 ```
 
 ### **Summary of Steps**:
 1. **Install YOLOv5**: Clone the repository and install dependencies.
 2. **Prepare Dataset**: Organize images and labels in YOLO format.
 3. **Label Images**: Use LabelImg for bounding box annotations.
-4. **Train Model**: Train the YOLOv5 model on your dataset.
+4. **Train Model**: Train the YOLOv5 model on the dataset.
 5. **Evaluate Model**: Evaluate model performance on the validation set.
 6. **Inference**: Run inference on new images and visualize the results.
