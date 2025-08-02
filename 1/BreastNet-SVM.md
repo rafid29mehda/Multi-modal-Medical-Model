@@ -142,5 +142,3 @@ predict_image('/path_to_new_image.png')
 3. **SVM Classifier**: The extracted features are passed to a **Support Vector Machine** classifier for training.
 4. **Model Saving and Loading**: The trained model can be saved and loaded for later predictions.
 5. **Prediction**: Classifies new images as benign or malignant based on the trained model.
-
-This approach effectively implements **BreastNet-SVM** for mammography image classification. Let me know if we have any questions!
