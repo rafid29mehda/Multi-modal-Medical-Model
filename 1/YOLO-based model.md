@@ -91,7 +91,7 @@ To run inference on new mammography images:
 
 ### **Step 8: Visualize the Results**
 
-After inference, the results will be saved in the `runs/detect/exp` directory. You can visualize the results:
+After inference, the results will be saved in the `runs/detect/exp` directory. we can visualize the results:
 
 ```python
 import matplotlib.pyplot as plt
@@ -105,7 +105,7 @@ plt.show()
 
 ### **Step 9: Save and Load the Model**
 
-You can save and load the trained YOLOv5 model for future use:
+we can save and load the trained YOLOv5 model for future use:
 
 ```python
 # Save the model
