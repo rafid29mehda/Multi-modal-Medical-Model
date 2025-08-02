@@ -1,4 +1,4 @@
-To implement the **BreastNet-SVM** model for your breast cancer detection project, I'll walk you through the code setup in parts. This model combines features from deep learning (AlexNet) and a Support Vector Machine (SVM) for classification. We'll use **AlexNet** to extract features and **SVM** for final classification. Since you're working with mammography PNG images, this setup will focus on feature extraction from images and training the SVM.
+To implement the **BreastNet-SVM** model for the breast cancer detection project, I'll walk you through the code setup in parts. This model combines features from deep learning (AlexNet) and a Support Vector Machine (SVM) for classification. We'll use **AlexNet** to extract features and **SVM** for final classification. Since you're working with mammography PNG images, this setup will focus on feature extraction from images and training the SVM.
 
 ### **Step 1: Install Necessary Libraries**
 
