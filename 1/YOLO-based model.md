@@ -1,5 +1,3 @@
-Here’s a step-by-step implementation of a **YOLO-based model** for detecting benign and malignant masses in your mammography dataset.
-
 ### **Step 1: Install YOLOv5 and Required Libraries**
 
 ```python
