@@ -1,4 +1,4 @@
-To implement the **BreastNet-SVM** model for the breast cancer detection project, I'll walk you through the code setup in parts. This model combines features from deep learning (AlexNet) and a Support Vector Machine (SVM) for classification. We'll use **AlexNet** to extract features and **SVM** for final classification. Since you're working with mammography PNG images, this setup will focus on feature extraction from images and training the SVM.
+To implement the **BreastNet-SVM** model for the breast cancer detection project, I'll walk we through the code setup in parts. This model combines features from deep learning (AlexNet) and a Support Vector Machine (SVM) for classification. We'll use **AlexNet** to extract features and **SVM** for final classification. Since we're working with mammography PNG images, this setup will focus on feature extraction from images and training the SVM.
 
 ### **Step 1: Install Necessary Libraries**
 
@@ -98,7 +98,7 @@ print(f'Validation Accuracy: {accuracy * 100:.2f}%')
 
 ### **Step 5: Save and Load the Model**
 
-You can save the trained SVM model for later use and load it when needed.
+we can save the trained SVM model for later use and load it when needed.
 
 ```python
 import joblib
@@ -112,7 +112,7 @@ svm_classifier = joblib.load('breastnet_svm_model.pkl')
 
 ### **Step 6: Prediction on New Images**
 
-Finally, you can load new images, preprocess them, extract features using **AlexNet**, and then classify them using the trained SVM model.
+Finally, we can load new images, preprocess them, extract features using **AlexNet**, and then classify them using the trained SVM model.
 
 ```python
 # Step 6: Predict on new images
@@ -143,4 +143,4 @@ predict_image('/path_to_new_image.png')
 4. **Model Saving and Loading**: The trained model can be saved and loaded for later predictions.
 5. **Prediction**: Classifies new images as benign or malignant based on the trained model.
 
-This approach effectively implements **BreastNet-SVM** for mammography image classification. Let me know if you have any questions!
+This approach effectively implements **BreastNet-SVM** for mammography image classification. Let me know if we have any questions!
