@@ -16,12 +16,12 @@ Multi-modal data in the biomedical field refers to combining different types of 
 - **Wearable sensor data** (e.g., ECG, heart rate, glucose monitors)
 
 ### 3. **Federated Learning (FL) Approach**
-Federated Learning enables training models across multiple institutions or devices without sharing raw data. This is critical in biomedical contexts due to privacy concerns and regulatory compliance (e.g., HIPAA, GDPR). Here’s how you can structure the FL setup:
+Federated Learning enables training models across multiple institutions or devices without sharing raw data. This is critical in biomedical contexts due to privacy concerns and regulatory compliance (e.g., HIPAA, GDPR). Here’s how we can structure the FL setup:
 
 #### **A. Federated Learning Setup**
 - **Decentralized data**: Medical data is distributed across hospitals or medical institutions. With FL, models are trained locally on each institution’s data, and only model updates (e.g., gradients, weights) are shared.
 - **Data privacy**: Patients’ data never leaves the local devices, thus preserving privacy. Techniques like **Differential Privacy (DP)** or **Secure Aggregation** can be implemented to ensure that individual data points can't be reconstructed from model updates.
-- **Model aggregation**: The central server aggregates model updates from multiple hospitals and combines them to improve the global model. You can use the standard **Federated Averaging (FedAvg)** or more advanced aggregation techniques to handle heterogeneous data.
+- **Model aggregation**: The central server aggregates model updates from multiple hospitals and combines them to improve the global model. we can use the standard **Federated Averaging (FedAvg)** or more advanced aggregation techniques to handle heterogeneous data.
 
 #### **B. Challenges and Considerations**
 - **Data heterogeneity**: Different hospitals may have varying types of data (e.g., different imaging machines, lab protocols). Models must account for this heterogeneity.
@@ -30,7 +30,7 @@ Federated Learning enables training models across multiple institutions or devic
 
 ### 4. **Proposed Multi-modal FL Architecture**
 
-You can propose a multi-modal FL architecture that involves:
+we can propose a multi-modal FL architecture that involves:
 - **Separate models for each modality**: Train separate models (e.g., convolutional neural networks for images, recurrent neural networks for clinical data) on the different types of data at each institution.
 - **Fusion layer**: After local training, use a **fusion layer** to combine the outputs from these modality-specific models. This fusion can occur in a central server or locally at each institution.
 - **Global model**: The global model is an ensemble of the modality-specific models, allowing it to learn from all types of data without having direct access to the raw data.
@@ -41,7 +41,7 @@ Several multi-modal architectures can be considered for the biomedical domain:
 - **LSTMs or Transformers for Clinical/Time-Series Data**: Use Long Short-Term Memory (LSTM) networks or Transformers for sequential clinical data or sensor readings.
 - **Graph Neural Networks (GNNs) for Genomic Data**: Use Graph Neural Networks for processing genomic and network-based data.
 
-To combine these modalities, you can use:
+To combine these modalities, we can use:
 - **Attention mechanisms**: Attention layers can be applied to learn the relative importance of each modality for specific tasks.
 - **Late fusion models**: Train models separately on different modalities and combine their predictions at the final decision stage (e.g., averaging, weighted voting).
   
@@ -98,4 +98,4 @@ To implement the multi-modal federated learning system in practice, consider the
 - **Federated Transfer Learning**: Use knowledge transfer from a related domain (e.g., image classification in radiology) to speed up training on multi-modal data.
 
 ### 11. **Conclusion**
-By combining multi-modal data with federated learning, you can create robust models for early-stage disease detection that preserve privacy, improve performance by leveraging diverse data sources, and potentially generalize better to new hospitals or patient populations.
+By combining multi-modal data with federated learning, we can create robust models for early-stage disease detection that preserve privacy, improve performance by leveraging diverse data sources, and potentially generalize better to new hospitals or patient populations.
