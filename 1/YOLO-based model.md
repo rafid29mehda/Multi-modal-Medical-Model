@@ -122,5 +122,3 @@ model = torch.hub.load('ultralytics/yolov5', 'custom', path='your_model_name.pt'
 4. **Train Model**: Train the YOLOv5 model on your dataset.
 5. **Evaluate Model**: Evaluate model performance on the validation set.
 6. **Inference**: Run inference on new images and visualize the results.
-
-This setup should allow you to train a YOLO-based model for detecting benign and malignant masses in mammography images. Let me know if you need further assistance!
