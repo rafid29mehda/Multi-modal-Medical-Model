@@ -1,4 +1,4 @@
-Creating a journal paper on **Multi-modal Federated Learning (FL) for early-stage medical diagnosis** is a promising area of research that integrates two crucial aspects: **multi-modal data** and **federated learning**. Here's a structured approach to how you can implement this in the biomedical field:
+Creating a journal paper on **Multi-modal Federated Learning (FL) for early-stage medical diagnosis** 
 
 ### 1. **Problem Definition: Early Detection of Medical Conditions**
 The focus should be on detecting early-stage diseases using data from various modalities (e.g., images, clinical data, genetic data, etc.). Example applications might include:
